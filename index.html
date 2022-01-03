@@ -1,1 +1,63 @@
-<h1>hello world!</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Koogle</title>
+        <script async src="https://cse.google.com/cse.js?cx=3ede750ee7fa253e1"></script>
+    </head>
+    <style>
+        * {
+            font-family: sans-serif;
+            box-sizing: content-box;
+        }
+      
+        html,body {
+            height: 100%;
+        }
+
+        /* hide ads */
+        .gsc-adBlock {
+            display: none !important;
+        }
+        
+        input,button {
+            line-height: 2em;
+            border-radius: 0;
+            border: 1px solid silver;
+            padding: 4px 8px;
+            font-size: 14px;
+            height: 33px;
+        }
+        
+        input {
+            padding-left: 8px;
+            width: 800px;
+            max-width: 80%;
+            margin-left: 18px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h1 > a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+<body>
+    <!-- search bar -->
+    <h1><a href="/">Koogle</a></h1>
+    <div id="search-bar">
+        <form action="/">
+            <input type="text" name="q" placeholder="search" id="q" />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- search results -->
+    <div class="gcse-searchresults-only"></div>
+
+    <!-- inspired by https://news.ycombinator.com/item?id=29774456 -->
+</body>
+</html>
